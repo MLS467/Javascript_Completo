@@ -1,17 +1,34 @@
+const body = document.body;
+const head = document.head;
+const css = '<link rel="stylesheet" href="header.css">';
 
-let head = document.head;
-let body = document.body;
 
-let estilo = '<link rel="stylesheet" href="header.css">';
-head.innerHTML += estilo;
+head.innerHTML += css;
+const header = document.createElement("div");
+header.setAttribute("class", "topo");
+header.setAttribute("id", "topo");
 
-let div = document.createElement("div");
-div.setAttribute("id", "topo");
-div.setAttribute("class", "topo");
+const logo =
+    `
+<div id="logo">
+    <img src="img/aluno.png" title="picsum" alt="picsum">
+</div>
+`;
+let nome = "Maisson Leal";
+let matricula = '24051995/2024';
 
-let logo = '<div class="logo" id="logo">' +
-    '<img src="https://picsum.photos/id/237/200/300">' +
-    '</div>';
+const login =
+    `
+<div id="login">
+    <div>
+        <p>Matrícula: ${nome}</p>
+        <p>Nome:  ${matricula}</p>
+    </div>   
+    <img src="img/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png" title="picsum" alt="picsum">
+</div>
+`;
 
-div.innerHTML += logo;
-body.prepend(div);
+
+header.innerHTML += (logo);
+header.innerHTML += (login);
+body.prepend(header);
