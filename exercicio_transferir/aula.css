@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    margin-top: 100px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    /* border: solid red 5px; */
+    justify-content: center;
+    
+   
+}
+
+#divBtn{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn{  
+text-align: center;
+line-height: 30px;
+margin: 0 25px 0 25px;
+display: block;
+height: 30px;
+width: 150px;
+background-color: blue;
+color: white;
+border: blue;
+}
+
+.btn:hover{
+    border:1px solid blue;
+    background-color: white;
+    color:blue;
+}
+
+.teste {
+    background-color: azure ;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-around ;
+    align-items: center;
+    width: 25%;
+    height: 550px;
+    border: solid 3px rgb(12, 12, 12);
+}
+
+.curso {
+
+    display: block;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    line-height: 30px;
+    border: solid 3px gray;
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
+
+.c1,
+.c2 {
+    background-color: rgba(128, 128, 128, 0.378);
+}
+
+
+.c1:hover,
+.c2:hover {
+    border-color: red;
+}
+
+.importante {
+    background-color: rgb(21, 20, 20) !important;
+    color: white;
+}
+

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0c0c;
+}
+
+main {
+    margin-top: 30px;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 355px;
+
+
+}
+
+.fechar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2%;
+    /* border: solid 1px red; */
+
+}
+
+#div_botoes {
+    border: 5px solid gray;
+    display: flex;
+    background-color: #fcfcac;
+    /* border: solid 2px #f47568; */
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 350px;
+    height: auto;
+}
+
+.btn {
+    /* display: inline-block; */
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2px;
+    background-color: #0d0c0c;
+    border: 2px solid #f4429f;
+    border-radius: 10px;
+    padding: 25px;
+    font-family: 'Honk', system-ui;
+    font-size: 35px;
+}
+
+#div_calc_nome {
+
+    font-size: 40px !important;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+
+}
+
+
+#div_calc_nome,
+#div_display {
+    border: 5px solid gray;
+    font-family: 'Honk', system-ui;
+    background-color: #f4429f;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    height: 50px;
+    text-align: center;
+    width: 350px;
+    /* border: solid 2px #000; */
+    margin: 1px;
+}
+
+#div_display {
+    text-align: right !important;
+    line-height: 100px !important;
+    height: 100px !important;
+    font-size: 40px !important;
+    overflow: hidden;
+}
+
+.func {
+    background-color: rgba(2, 2, 2, 0.607);
+}
+
+.func:hover,
+.btn:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.837), 0 6px 20px 0 rgba(0, 0, 0, 0.853);
+}
+
+#fechar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    border: #f4429f 1px solid;
+    border-radius: 10px;
+}
+
+.material-symbols-outlined {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+}
+
+.diminue {
+    padding: 25px;
+}
+
+.deslisar {
+    transition: all 3s;
+}
+
+.desaparece {
+    margin-left: -351px;
+}

@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.divCampo {
+    margin-bottom: 10px;
+}
+
+/* Estilos para o campo de entrada de texto */
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilos para o botão */
+button#btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilos para o botão ao passar o mouse sobre ele */
+button#btn:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    margin-top: 100px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    /* border: solid red 5px; */
+    justify-content: center;
+
+}
+
+button {
+    margin-bottom: 15px;
+}
+
+input{
+    font-size: 25px;
+}
+
+.btn {
+    margin-top: 15px;
+    width: 250px;
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.btn:hover{
+    color: blue;
+    background-color: white;
+    opacity: 0.7;
+    padding: 10px;
+    border:2px solid rgb(0, 221, 255);
+}
+
+#recebe {
+    /* border: solid 1px orangered; */
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.teste {
+    margin-left: 5px;
+    background-color: azure;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    height: 550px;
+    border: solid 3px rgb(12, 12, 12);
+}
+
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+
+.curso {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 200px;
+    text-align: left;
+    line-height: 30px;
+    border: solid 3px gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.c1,
+.c2 {
+    background-color: rgba(128, 128, 128, 0.378);
+}
+
+
+.c1:hover,
+.c2:hover {
+    border-color: red;
+}
+
+.importante {
+    background-color: rgb(21, 20, 20) !important;
+    color: white;
+}
