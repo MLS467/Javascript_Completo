@@ -1,8 +1,8 @@
 // OBJ LITERAL
 const config = {
-    titulo: "ficou zika",
-    texto: "bolada",
-    cor: "red"
+    titulo: "INSTANCIEI A CLASSE ",
+    texto: "PEGAR PORQUE",
+    cor: "#007acc"
 }
 
 //INSTANCIEI A CLASSE CONSEGUI PEGAR PORQUE O ARQUIVO DA CLASSE VEM ANTES 
@@ -12,3 +12,5 @@ const cx = new Caixa(config);
 document.getElementById("btn").addEventListener("click", () => {
     cx.mostrar();
 })
+
+
