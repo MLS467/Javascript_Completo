@@ -12,7 +12,7 @@
     <h1>NOVO</h1>
 
     <div id="divForm">
-        <form action="../controller/contatosController.php" method="post">
+        <form action="../controller/contatosController.php" method="post" id="formNovo">
             <div>
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome">
@@ -33,10 +33,11 @@
                 <input type="date" name="dataNascimento">
             </div>
 
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" id="btnForm">
         </form>
     </div>
 
+    <script src="../public/js/novo.js"></script>
 </body>
 
 </html>

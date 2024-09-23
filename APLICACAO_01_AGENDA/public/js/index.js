@@ -4,13 +4,17 @@ const pesquisar = document.querySelector('#pesquisar');
 const gestao = document.querySelector('#gestao');
 const sobre = document.querySelector('#sobre');
 const corpo = document.querySelector('#corpo');
+const filtrar = document.querySelector('#filtrar');
 
 
 
 
-home.addEventListener('click', async (evt) => {
+home.addEventListener('click', (evt) => {
     acessaPaginas(evt.target, '../view/home.html');
+});
 
+filtrar.addEventListener('click', (evt) => {
+    acessaPaginas(evt.target, '../view/filtrar.html');
 });
 
 

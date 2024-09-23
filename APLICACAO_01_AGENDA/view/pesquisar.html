@@ -4,11 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/pesquisar.css">
     <title>Pesquisar</title>
 </head>
 
-<body>
-    <h1>PESQUISAR</h1>
+<body class="container">
+    <h1 class="">PESQUISAR</h1>
+
+    <div id="pesquisarForm">
+        <div>
+            <label for="id">Id</label>
+            <input type="radio" id="id" value="id" name="contato">
+        </div>
+        <div>
+            <label for="nome">Nome</label>
+            <input type="radio" id="nome" value="nome" name="contato" checked>
+        </div>
+        <div>
+            <label for="celular">Celular</label>
+            <input type="radio" id="celular" value="celular" name="contato">
+        </div>
+        <div>
+            <label for="pesquisar"></label>
+            <input type="text" id="pesquisar" placeholder="Pesquisar Aqui">
+            <input type="submit" value="Pesquisar" id="btnPesquisar">
+        </div>
+    </div>
+
+    <div id="divTabela">
+        <table id="tabelaPesquisa">
+            <thead>
+                <tr>
+
+                    <th>id</th>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Data Nascimento</th>
+                    <th>email</th>
+
+                </tr>
+
+            </thead>
+            <tbody id="resultadoPesquisados">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../public/js/pesquisar.js"></script>
 </body>
 
 </html>

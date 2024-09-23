@@ -52,12 +52,43 @@ class Contatos
         return $query->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function pesquisarRegistro($pesquisa)
+    public function pesquisarRegistro($pesquisa, $tipo)
     {
-        $sql = "SELECT * FROM $this->nomeTabela WHERE UPPER(nome) LIKE UPPER('%$pesquisa%') ORDER BY nome";
+        switch ($tipo) {
+            case 'nome':
+                $where =  "WHERE UPPER(nome) LIKE UPPER('%$pesquisa%')";
+                break;
+            case 'id':
+                $where =  "WHERE id = $pesquisa";
+                break;
+            case 'celular':
+                $where =  "WHERE celular LIKE '%$pesquisa%'";
+                break;
+        }
+
+
+        $sql = "SELECT * FROM $this->nomeTabela $where ORDER BY nome";
         $query = Db::preparar($sql);
         $query->execute();
         return $query->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+
+    public function excluirRegistroId(int $id): bool
+    {
+        $sql = "DELETE FROM $this->nomeTabela WHERE id = $id";
+        if (Db::preparar($sql)->execute())
+            return true;
+        return false;
+    }
+
+    public function editarRegistroId(int $id, array $dados): bool
+    {
+        $sql = "UPDATE $this->nomeTabela SET nome=?, celular=?, email=?, data_nascimento =? WHERE id= $id";
+        $query = Db::preparar($sql);
+        if ($query->execute([$dados['nome'], $dados['celular'], $dados['email'], $dados['data_nascimento']]))
+            return true;
+        return false;
     }
 
     public function getNome(): string

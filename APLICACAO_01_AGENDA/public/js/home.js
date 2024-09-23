@@ -3,7 +3,6 @@ const retornaContatos = async () => {
     (await fetch(endpoint, { method: 'GET' })).json()
         .then(res => res.contatos.forEach(element => {
             console.log(element)
-            // document.getElementById('contatosRes').innerHTML += `NOME: ${element.nome}   Tel ${element.celular}<br>`;
             document.getElementById('contatosRes').innerHTML +=
                 `
                 <tr>

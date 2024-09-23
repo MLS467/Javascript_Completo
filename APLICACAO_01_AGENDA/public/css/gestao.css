@@ -1,0 +1,103 @@
+body {
+    position: relative;
+}
+
+#tabelaContato {
+    width: 100%;
+
+}
+
+.borda {
+    border: 1px solid red;
+}
+
+table {
+    width: 100%;
+
+}
+
+#corpo {
+    width: 40%;
+    height: auto;
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    margin-right: 15px;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+#corpo div {
+    display: inherit;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 90%;
+}
+
+#popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.ocultar {
+    display: none !important;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 15px;
+    color: #fff;
+    padding: 15px;
+    background-color: #248;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#titulo {
+    width: 40%;
+    color: #fff;
+    padding: 15px;
+    background-color: #248;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+th {
+    border-bottom: 1px solid black;
+    margin: 5%;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+
+.container {
+    width: 90% !important;
+    margin: auto auto;
+}

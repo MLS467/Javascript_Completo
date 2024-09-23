@@ -25,7 +25,7 @@ class Db
                         PDO::ATTR_CASE => PDO::CASE_NATURAL
                     )
                 );
-                echo "conectado com sucesso!";
+                // echo "conectado com sucesso!";
                 return self::$pdo;
             } catch (\Throwable $e) {
                 echo $e->getMessage();

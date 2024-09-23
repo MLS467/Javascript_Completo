@@ -1,0 +1,51 @@
+.container {
+    width: 90% !important;
+    margin: auto auto !important;
+}
+
+#pesquisarForm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.borda {
+
+    border: 1px solid red;
+}
+
+
+#tabelaPesquisa {
+    width: 100%;
+}
+
+
+
+#resPesquisa {
+
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tabelaPesquisa table {
+    width: 100%;
+
+}
+
+
+#tabelaPesquisa th {
+    border-bottom: 1px solid black;
+    margin: 5%;
+}
+
+#tabelaPesquisa th,
+#tabelaPesquisa td {
+    padding: 15px;
+    text-align: center;
+}
